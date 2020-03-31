@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLBaseController">
+   <children>
+      <VBox layoutX="242.0" layoutY="57.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Cadastro">
+                  <items>
+                    <MenuItem fx:id="miCadAluno" mnemonicParsing="false" onAction="#onClickedmiCadAluno" text="Aluno" />
+                        <MenuItem fx:id="miCadFunc" mnemonicParsing="false" onAction="#onClickedmiCadFunc" text="Funcionario" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Avaliação-Fisica">
+                  <items>
+                    <MenuItem fx:id="miAtualizaAva" mnemonicParsing="false" onAction="#onClickedmiAtualizaAva" text="Atualizar" />
+                        <MenuItem fx:id="miConsAva" mnemonicParsing="false" onAction="#onClickedmimiConsAva" text="Consultar" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Usuario">
+                  <items>
+                    <MenuItem fx:id="miConsuUsuario" mnemonicParsing="false" onAction="#omClickedmiConsuUsuario" text="Consultar" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Pacotes">
+                     <items>
+                        <MenuItem fx:id="miCadasPac" mnemonicParsing="false" onAction="#onContrata" text="Contrata" />
+                        <MenuItem fx:id="miConsultPac" mnemonicParsing="false" onAction="#onClickedConsulta" text="Consulta" />
+                        <MenuItem fx:id="miFromaPac" mnemonicParsing="false" onAction="#onClickedFormaPgto" text="Forma de Pagamento" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <ImageView fitHeight="379.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@TelaBase.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
